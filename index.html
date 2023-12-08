@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display">
+          </div>
+          <div class="buttons">
+          <div>
+            <input class="pushable" type="button" value="AC" onclick="display.value ='' ">
+            <input class="pushable" type="button" value="DE" onclick="display.value=display.value.toString().slice(0,-1)">
+            <input class="pushable" type="button" value="." onclick="display.value+='.' ">
+            <input class="pushable" type="button" value="÷" onclick="display.value+='/' ">
+          </div>
+          <div>
+            <input class="pushable" type="button" value="7" onclick="display.value+='7'">
+            <input class="pushable" type="button" value="8" onclick="display.value+='8'">
+            <input class="pushable" type="button" value="9" onclick="display.value+='9'">
+            <input class="pushable" type="button" value="×" onclick="display.value+='*'">
+          </div>
+          <div>
+            <input class="pushable" type="button" value="4" onclick="display.value+='4'">
+            <input class="pushable" type="button" value="5" onclick="display.value+='5'">
+            <input class="pushable" type="button" value="6" onclick="display.value+='6'">
+            <input class="pushable" type="button" value="-" onclick="display.value+='-'">
+          </div>
+          <div>
+            <input class="pushable" type="button" value="1" onclick="display.value+='1'">
+            <input class="pushable" type="button" value="2" onclick="display.value+='2'">
+            <input class="pushable" type="button" value="3" onclick="display.value+='3'">
+            <input class="pushable" type="button" value="+" onclick="display.value+='+'">
+          </div>
+          <div>
+            <input class="pushable"type="button" value="00" onclick="display.value+='00'">
+            <input class="pushable"type="button" value="0" onclick="display.value+='0'">
+            <input class="pushable"type="button" value="=" id="equal" onclick="display.value=eval(display.value)">
+            
+          </div>
+        </div>
+          
+        </form>
+
+      </div>
+
+    </div>
+      <!--<div class="input-screen">
+        <input type="number" id="input" />
+      </div>
+      <div class="buttons">
+        <div class="row1">
+          <butt class="pushable"><span class="front">AC</span></button>
+          <button class="pushable"><span class="front">C</span></button>
+          <button class="pushable"><span class="front">%</span></button>
+          <button class="pushable"><span class="front">÷</span></button>
+        </div>
+        <div class="row2">
+          <button class="pushable"><span class="front">7</span></button>
+          <button class="pushable"><span class="front">8</span></button>
+          <button class="pushable"><span class="front">9</span></button>
+          <button class="pushable"><span class="front">+</span></button>
+        </div>
+        <div class="row3">
+          <button class="pushable"><span class="front">4</span></button>
+          <button class="pushable"><span class="front">5</span></button>
+          <button class="pushable"><span class="front">6</span></button>
+          <button class="pushable"><span class="front">-</span></button>
+        </div>
+        <div class="row4">
+          <button class="pushable"><span class="front">1</span></button>
+          <button class="pushable"><span class="front">2</span></button>
+          <button class="pushable"><span class="front">3</span></button>
+          <button class="pushable"><span class="front">×</span></button>
+        </div>
+        <div class="row5">
+        <button class="pushable">
+          <span class="front">0</span></button>
+        <button class="pushable"><span class="front">.</span></button>
+        <button class="pushable"><span class="front">=</span></button>
+      </div>
+      </div>
+    </div>
+  -->
+  
+  </body>
+  <footer>Copyright @Siphelele Zulu</footer>
+</html>
